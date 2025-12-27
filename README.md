@@ -8,7 +8,7 @@
 
 ## Install
 
-All instructions can be found at [draculatheme.com/github-pages](https://draculatheme.com/github-pages).
+All instructions can be found at [draculatheme.com/gh-pages](https://draculatheme.com/gh-pages).
 
 ## Customizing
 
@@ -69,11 +69,13 @@ Templates often rely on URLs supplied by GitHub such as links to your repository
 
 1. Look at [the template source](https://github.com/dracula/gh-pages/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
 2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
+
    ```yml
    github:
      zip_url: http://example.com/download.zip
      another_url: another value
    ```
+
 3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
 
 _Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`._
